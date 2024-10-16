@@ -5,7 +5,7 @@
 #' @param object The table to be printed.
 #' @param escape Argument passed to kable() to escape special characters.
 #' @examples
-#' m <- matrix(rnorm(1e2), nrow = 10, ncol = 10)
+#' m <- matrix(rnorm(50), nrow = 10, ncol = 5)
 #' table(m)
 #'
 #' @export
