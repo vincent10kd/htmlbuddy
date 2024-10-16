@@ -19,7 +19,7 @@
 #'
 #' @export
 
-page <- function(..., filename = 'output.html', css = NULL){
+page <- function(..., filename = 'output.html', css = 'inst/extdata/minimalist_css.css'){
   if(!is.null(css)) css <- readChar(css, 10000)
   header <- paste0("
                <HTML><head><title>",paste(date(),"</title>",
