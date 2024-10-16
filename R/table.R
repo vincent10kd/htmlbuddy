@@ -12,6 +12,6 @@
 #' @importFrom kableExtra "kable"
 
 table <- function(object, escape = TRUE){
-  cat(capture.output(kableExtra::kable(object, escape = escape)))
+  cat(capture.output(kableExtra::kable(object, escape = escape, format = 'html')))
 }
 
