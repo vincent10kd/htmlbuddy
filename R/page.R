@@ -19,7 +19,8 @@
 #'
 #' @export
 
-page <- function(..., filename = 'output.html', css = system.file('extdata', package = 'htmlbuddy')){
+page <- function(..., filename = 'output.html',
+                 css = list.files(system.file('extdata', package = 'htmlbuddy'), full.names = TRUE)){
   if(!is.null(css)) css <- readChar(css, 10000)
   header <- paste0("
                <HTML><head><title>",paste(date(),"</title>",
