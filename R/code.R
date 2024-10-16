@@ -9,6 +9,6 @@
 #' @export
 
 code <- function(code){
-  cat('<br><pre><code>',code,'</code></pre><br>')
+  cat('<pre><code>',code,'</code></pre>')
 }
 
