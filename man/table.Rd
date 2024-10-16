@@ -15,7 +15,7 @@ table(object, escape = TRUE)
 Outputs a data.frame or matrix as HTML table.
 }
 \examples{
-m <- matrix(rnorm(1e2), nrow = 10, ncol = 10)
+m <- matrix(rnorm(50), nrow = 10, ncol = 5)
 table(m)
 
 }

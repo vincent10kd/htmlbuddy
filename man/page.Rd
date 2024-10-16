@@ -4,7 +4,11 @@
 \alias{page}
 \title{Create an HTML page}
 \usage{
-page(..., filename = "output.html", css = NULL)
+page(
+  ...,
+  filename = "output.html",
+  css = list.files(system.file("extdata", package = "htmlbuddy"), full.names = TRUE)
+)
 }
 \arguments{
 \item{...}{Elements to include on the page, such as a table(), image() and text().}
