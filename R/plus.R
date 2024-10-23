@@ -12,13 +12,20 @@
 #' page1 <- page1 + tab(matrix(rnorm(100), nrow = 10, ncol = 10))
 #' page1
 #'
-#' page1 <- page1 + text('Just wanted to add some text)
+#' page1 <- page1 + text('Just wanted to add some text')
 #' page1
 #'
 #' @export
 #'
 
 `+.pageObject` <- function(...){
+  content <- list(...)
+  content <- paste(content, collapse = '')
+  class(content) <- 'page'
+  return(content)
+}
+
+`+.page` <- function(...){
   content <- list(...)
   content <- paste(content, collapse = '')
   class(content) <- 'page'
