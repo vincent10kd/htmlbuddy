@@ -11,7 +11,7 @@
 #' @export
 
 toc <- function(header, page_titles, page_links){
-  cat(paste(trimws(capture.output(
+  textObj <- paste(trimws(capture.output(
     for(h in 1:length(header)){
       cat(paste("<H3  id='lih'>",header[h],"</H3><ul id='navlist'>"))
       for(p in 1:length(page_titles)){
@@ -19,6 +19,8 @@ toc <- function(header, page_titles, page_links){
             "</a></li>")
       }
       cat(paste0('</ul>'))
-    })),collapse=''))
+    })),collapse='')
+  class(textObj) <- 'pageObject'
+  return(invisible(textObj))
 }
 

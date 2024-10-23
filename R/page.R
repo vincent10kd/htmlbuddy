@@ -19,16 +19,9 @@
 #'
 #' @export
 
-page <- function(..., filename = 'output.html',
-                 css = list.files(system.file('extdata', package = 'htmlbuddy'), full.names = TRUE)){
-  if(!is.null(css)) css <- readChar(css, 10000)
-  header <- paste0("
-               <HTML><head><title>",paste(date(),"</title>",
-                                          ifelse(!is.null(css), paste(" <style type='text/css'>",css,"</style>"),paste('')),
-                                          "</head><body> <div id='cont'><p>
-               Page created on ", paste(date()),"</p>
-               <hr>"))
+page <- function(...){
   content <- capture.output(...)
-  write(c(header,content), file=filename)
+  class(content) <- 'page'
+  return(content)
 }
 

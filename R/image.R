@@ -10,6 +10,8 @@
 #' @export
 
 image <- function(image_name, image_dims = c(800,800)){
-  cat(paste0("<img src='",image_name,"' width = ",image_dims[1]," height = ",image_dims[2]," border='1'><br><br>"))
+  imageObj <- paste0("<img src='",image_name,"' width = ",image_dims[1]," height = ",image_dims[2]," border='1'><br><br>")
+  class(imageObj) <- 'pageObject'
+  return(invisible(imageObj))
 }
 

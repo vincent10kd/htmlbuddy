@@ -12,6 +12,8 @@
 #' @importFrom kableExtra "kable"
 
 tab <- function(object, escape = TRUE){
-  cat(capture.output(kableExtra::kable(object, escape = escape, format = 'html')))
+  tabObj <- kableExtra::kable(object, escape = escape, format = 'html')
+  class(tabObj) <- 'pageObject'
+  return(invisible(tabObj))
 }
 

@@ -10,7 +10,9 @@
 #' @export
 
 title <- function(text, size = 'big'){
-  if(size == 'big') cat('<H2>',text,'</H2>')
-  else cat('<H3>',text,'</H3>')
+  if(size == 'big') textObj <- paste0('<H2>', text, '</H2>')
+  else textObj <- paste0('<H3>', text, '</H3>')
+  class(textObj) <- 'pageObject'
+  return(invisible(textObj))
 }
 

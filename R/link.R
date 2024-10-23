@@ -10,6 +10,8 @@
 #' @export
 
 link <- function(name, path){
-  cat('<br><a href=',path,'>',name,'</a><br>')
+  textObj <- paste0('<br><a href=',path,'>',name,'</a><br>')
+  class(textObj) <- 'pageObject'
+  return(invisible(textObj))
 }
 

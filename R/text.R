@@ -9,6 +9,8 @@
 #' @export
 
 text <- function(text){
-  cat('<br>',text,'<br>')
+  textObj <- paste0('<br>', text, '<br>')
+  class(textObj) <- 'pageObject'
+  return(invisible(textObj))
 }
 
