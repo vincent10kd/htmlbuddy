@@ -20,8 +20,8 @@
 #' @export
 
 page <- function(...){
-  content <- capture.output(...)
+  content <- paste(...)
   class(content) <- 'page'
-  return(content)
+  invisible(return(content))
 }
 
