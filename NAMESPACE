@@ -2,6 +2,7 @@
 
 S3method("+",page)
 S3method("+",pageObject)
+export(batch)
 export(capture)
 export(code)
 export(image)
