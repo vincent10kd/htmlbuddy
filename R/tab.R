@@ -6,12 +6,12 @@
 #' @param escape Argument passed to kable() to escape special characters.
 #' @examples
 #' m <- matrix(rnorm(50), nrow = 10, ncol = 5)
-#' table(m)
+#' tab(m)
 #'
 #' @export
 #' @importFrom kableExtra "kable"
 
-table <- function(object, escape = TRUE){
+tab <- function(object, escape = TRUE){
   cat(capture.output(kableExtra::kable(object, escape = escape, format = 'html')))
 }
 
