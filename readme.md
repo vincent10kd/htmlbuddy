@@ -57,5 +57,19 @@ p3 <- title("Title for page 3") + batch(tab_list, tab)
 render(p3, filename = 'example_page3.html')
 ```
 
+## Code and math
+
+It is also possible to display code chunks or mathematical equations (using mathjax) in **htmlbuddy**. The corresponding functions are `code()` and `math()`. Example usage is as follows:
+
+``` r
+p4 <- code('print("hello world")') +
+      math('$$ {J(\\theta) =\\frac{1}{2m} [\\sum^m_{i=1}(h_\\theta(x^{(i)}) - y^{(i)})2 + \\lambda\\sum^n_{j=1}\\theta^2_j} $$')
+
+render(p4, filename = 'example_page4.html')
+```
+
+Note that for the `mathjax` syntax one needs to escape special characters for it to display correctly. 
+
+ 
 That's all there is to it! Happy html'ing.. In case of further suggestions, feel free to get in touch.
 
