@@ -22,7 +22,7 @@ body {
   width: 85px;
   overflow-x: hidden;
   white-space:nowrap;
-  background: #c8c8c8;
+  background: #e7e7e7;
   padding: 25px 20px;
   transition: all 0.4s ease;
 }
@@ -37,7 +37,7 @@ body {
   height: 100%;
   width: 85px;
   overflow-x: hidden;
-  background: #c8c8c8;
+  background: #e7e7e7;
   padding: 25px 20px;
   transition: all 0.4s ease;
 }
