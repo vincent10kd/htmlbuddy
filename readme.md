@@ -1,4 +1,4 @@
-htmlbuddy
+htmlbuddy  ![htmlbuddy hex sticker](man/figures/hexsticker.png)
 ================
 <vincent10kd@gmail.com>
 2024-10-23
