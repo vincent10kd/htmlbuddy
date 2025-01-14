@@ -26,7 +26,7 @@ render <- function(..., filename = NULL,
                <HTML><head><title>",paste(date(),"</title>",
                                           ifelse(!is.null(css), paste(" <style type='text/css'>",css,"</style>"),paste('')),
                                           "</head><body> <div id='cont'><p>
-               Page created on ", paste(date()),"</p>
+               Page created with htmlbuddy on ", paste(date()),"</p>
                <hr>"))
   pageList <- lapply(content, eval)
   for(p in 1:length(pageList)){
