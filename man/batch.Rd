@@ -4,12 +4,14 @@
 \alias{batch}
 \title{Batch execute a function}
 \usage{
-batch(list, expr, sep = "<br><br>>")
+batch(list, expr, ..., sep = "<br><br>")
 }
 \arguments{
 \item{list}{The list object, containing objects (e.g., data.frames, character vectors, etc.)}
 
 \item{expr}{The function to be applied, e.g., tab, image, or text.}
+
+\item{...}{Arguments to pass to the function to be applied.}
 
 \item{sep}{The separator argument for the internal paste() function, allowing one to separate tables using particular inputs, or to paste together a larger table if setting this to ''.}
 }
