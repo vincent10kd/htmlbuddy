@@ -13,6 +13,14 @@ body {
   padding: 2em 1em;
 }
 
+details summary { 
+  cursor: pointer;
+}
+
+details summary > * {
+  display: inline;
+}
+
 
 .sidebar {
   position: fixed;
