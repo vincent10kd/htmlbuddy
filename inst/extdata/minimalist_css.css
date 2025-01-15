@@ -13,6 +13,10 @@ body {
   padding: 2em 1em;
 }
 
+details {
+  transition: 50ms;
+}
+
 summary { 
   cursor: pointer;
   display: inline;
@@ -23,10 +27,6 @@ summary::marker {
   content: "";
 }
 
-summary::before,
-summary::after {
-    transition: 200ms;
-  }
 
 .sidebar {
   position: fixed;
