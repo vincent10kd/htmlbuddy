@@ -15,7 +15,7 @@ title <- function(text, size = 'big', id = NULL, collapsible = TRUE){
   if(size == 'big') textObj <- paste0('<H2>', text, '</H2>')
   else textObj <- paste0('<H3>', text, '</H3>')
   if(!is.null(id)) textObj <- paste0('<div id = "',id,'">', textObj)
-  if(collapsible) textObj <- paste0('<details><summary>', textObj,'</p></summary><span>')
+  if(collapsible) textObj <- paste0('<details open><summary>', textObj,'</p></summary><span>')
   textObj <- paste0('</span></details>', textObj)
   class(textObj) <- 'pageObject'
   return(invisible(textObj))
