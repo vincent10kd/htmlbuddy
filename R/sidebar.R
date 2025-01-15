@@ -12,9 +12,10 @@
 #' @export
 
 sidebar <- function(..., side = 'left', small = TRUE){
-  sideclass <- paste0('</span></details><aside class="', ifelse(side == 'left', 'sidebar', 'sidebar2'),'"><div>')
+  sideclass <- paste0('<aside class="', ifelse(side == 'left', 'sidebar', 'sidebar2'),'"><div>')
   if(small) content <- paste('<small>',sideclass,..., '</small></div></aside>')
   else content <- paste(sideclass,..., '</div></aside>')
+  content <- paste0('</span></details>', content)
   class(content) <- 'page'
   invisible(return(content))
 }
