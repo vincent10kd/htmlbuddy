@@ -13,12 +13,15 @@ body {
   padding: 2em 1em;
 }
 
-details summary { 
+summary { 
   cursor: pointer;
   display: inline;
   list-style-type: none;
 } 
 
+summary::marker {
+  content: "";
+}
 
 .sidebar {
   position: fixed;
