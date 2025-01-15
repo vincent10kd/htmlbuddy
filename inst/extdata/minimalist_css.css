@@ -23,6 +23,11 @@ summary::marker {
   content: "";
 }
 
+summary::before,
+summary::after {
+    transition: 200ms;
+  }
+
 .sidebar {
   position: fixed;
   top: 0;
