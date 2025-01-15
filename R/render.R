@@ -30,7 +30,7 @@ render <- function(..., filename = NULL,
                <hr>"))
   pageList <- lapply(content, eval)
   for(p in 1:length(pageList)){
-    write(c(header,pageList[[p]]), file=filename[p])
+    write(c(header,pageList[[p]],'</span></details>'), file=filename[p])
   }
 }
 
