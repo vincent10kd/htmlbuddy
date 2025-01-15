@@ -15,11 +15,9 @@ body {
 
 details summary { 
   cursor: pointer;
-} 
-
-details summary > * {
   display: inline;
-}
+  list-style-type: none;
+} 
 
 
 .sidebar {
@@ -38,13 +36,6 @@ details summary > * {
   width: 200px;
 }
 
-.sidebar:details summary { 
-  cursor: pointer;
-} 
-
-.sidebar:details summary > * {
-  display: inline;
-}
 
 .sidebar2 {
   position: fixed;
@@ -60,15 +51,6 @@ details summary > * {
 .sidebar2:hover {
   width: 200px;
 }
-
-.sidebar2:details summary { 
-  cursor: pointer;
-} 
-
-.sidebar2:details summary > * {
-  display: inline;
-}
-
 
 
 h1 {
