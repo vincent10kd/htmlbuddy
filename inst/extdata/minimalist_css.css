@@ -38,6 +38,14 @@ details summary > * {
   width: 200px;
 }
 
+.sidebar:details summary { 
+  cursor: pointer;
+} 
+
+.sidebar:details summary > * {
+  display: inline;
+}
+
 .sidebar2 {
   position: fixed;
   top: 0;
@@ -51,6 +59,14 @@ details summary > * {
 }
 .sidebar2:hover {
   width: 200px;
+}
+
+.sidebar2:details summary { 
+  cursor: pointer;
+} 
+
+.sidebar2:details summary > * {
+  display: inline;
 }
 
 

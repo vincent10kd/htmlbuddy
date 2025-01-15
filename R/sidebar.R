@@ -15,7 +15,7 @@ sidebar <- function(..., side = 'left', small = TRUE){
   sideclass <- paste0('<aside class="', ifelse(side == 'left', 'sidebar', 'sidebar2'),'"><div>')
   if(small) content <- paste('<small>',sideclass,..., '</small></div></aside>')
   else content <- paste(sideclass,..., '</div></aside>')
-  content <- paste0('</span></details>', content)
+  content <- paste0('</div>', content)
   class(content) <- 'page'
   invisible(return(content))
 }
